@@ -25,7 +25,7 @@ export const TokenSaleSection = () => {
   }, [isInView]);
 
   return (
-    <section ref={ref} className="py-24 relative overflow-hidden">
+    <section ref={ref} className="py-24 relative overflow-hidden md:mt-[-100px]">
       <div className="container px-4 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

@@ -8,7 +8,7 @@ export const ConversionSection = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="tokenization" ref={ref} className="py-24 relative">
+    <section id="tokenization" ref={ref} className="py-24 relative md:mt-[-100px]">
       <div className="container px-4">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

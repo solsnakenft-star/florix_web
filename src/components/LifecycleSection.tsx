@@ -24,7 +24,7 @@ export const LifecycleSection = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section ref={ref} className="py-24 relative overflow-hidden">
+    <section ref={ref} className="py-24 relative overflow-hidden md:mt-[-100px]">
       {/* Background */}
       <div className="absolute inset-0 gradient-glow opacity-30" />
       
@@ -71,9 +71,9 @@ export const LifecycleSection = () => {
           {/* Steps in Circle */}
           {steps.map((step, i) => {
             const angle = (i * 60 - 90) * (Math.PI / 180);
-            const radius = 42; // percentage from center
-            const x = 50 + radius * Math.cos(angle);
-            const y = 50 + radius * Math.sin(angle);
+            const boxRadius = 42; // percentage from center
+            const x = 42 + boxRadius * Math.cos(angle);
+            const y = 42 + boxRadius * Math.sin(angle);
 
             return (
               <motion.div
@@ -84,7 +84,7 @@ export const LifecycleSection = () => {
                 className="absolute -translate-x-1/2 -translate-y-1/2"
                 style={{ left: `${x}%`, top: `${y}%` }}
               >
-                <div className="glass-card p-4 text-center w-32 hover:border-primary/50 transition-all duration-300 group">
+                <div className="glass-card p-4 text-center w-32 bg-background/80 backdrop-blur-md hover:border-primary/50 transition-all duration-300 group relative z-10">
                   <div className="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center mx-auto mb-3 group-hover:neon-glow transition-all">
                     <step.icon className="w-6 h-6 text-primary" />
                   </div>
@@ -96,7 +96,7 @@ export const LifecycleSection = () => {
           })}
 
           {/* Connecting Lines */}
-          <svg className="absolute inset-0 w-full h-full pointer-events-none">
+          <svg className="absolute inset-0 w-full h-full pointer-events-none z-0">
             <defs>
               <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
                 <stop offset="0%" stopColor="hsl(155 100% 50% / 0.3)" />
@@ -107,12 +107,12 @@ export const LifecycleSection = () => {
             {steps.map((_, i) => {
               const startAngle = (i * 60 - 90) * (Math.PI / 180);
               const endAngle = ((i + 1) * 60 - 90) * (Math.PI / 180);
-              const radius = 42;
+              const lineRadius = 42;
               
-              const x1 = 50 + radius * Math.cos(startAngle);
-              const y1 = 50 + radius * Math.sin(startAngle);
-              const x2 = 50 + radius * Math.cos(endAngle);
-              const y2 = 50 + radius * Math.sin(endAngle);
+              const x1 = 50 + lineRadius * Math.cos(startAngle);
+              const y1 = 50 + lineRadius * Math.sin(startAngle);
+              const x2 = 50 + lineRadius * Math.cos(endAngle);
+              const y2 = 50 + lineRadius * Math.sin(endAngle);
 
               return (
                 <motion.line

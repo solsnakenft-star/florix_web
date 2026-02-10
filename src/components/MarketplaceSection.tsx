@@ -60,7 +60,7 @@ export const MarketplaceSection = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="marketplace" ref={ref} className="py-24 relative">
+    <section id="marketplace" ref={ref} className="py-24 relative md:mt-[-100px]">
       <div className="absolute inset-0 gradient-glow opacity-20" />
       
       <div className="container px-4 relative z-10">
@@ -111,7 +111,7 @@ export const MarketplaceSection = () => {
                   {project.location}
                 </div>
                 
-                <div className="flex items-center justify-between pb-4 border-b border-border">
+                <div className="flex items-center justify-between pb-4">
                   <div>
                     <p className="text-xs text-muted-foreground">Available</p>
                     <p className="font-heading font-bold">{project.credits} tCO₂</p>
@@ -122,10 +122,10 @@ export const MarketplaceSection = () => {
                   </div>
                 </div>
                 
-                <Button className="w-full mt-4 btn-primary-glow rounded-full">
+                {/* <Button className="w-full mt-4 btn-primary-glow rounded-full">
                   <ShoppingCart className="w-4 h-4 mr-2" />
                   Buy Credits
-                </Button>
+                </Button> */}
               </div>
             </motion.div>
           ))}

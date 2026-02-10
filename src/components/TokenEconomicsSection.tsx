@@ -47,7 +47,7 @@ export const TokenEconomicsSection = () => {
   const segments = calculateDonutSegments();
 
   return (
-    <section ref={ref} id="tokenomics" className="py-24 relative">
+    <section ref={ref} id="tokenomics" className="py-24 relative md:mt-[-100px]">
       <div className="absolute inset-0 bg-gradient-to-b from-background via-primary/3 to-background" />
       
       <div className="container px-4 relative z-10">

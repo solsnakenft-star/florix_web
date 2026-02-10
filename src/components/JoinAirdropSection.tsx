@@ -20,7 +20,7 @@ export const JoinAirdropSection = () => {
           transition={{ duration: 0.8 }}
           className="max-w-4xl mx-auto"
         >
-          <div className="glass-card-glow p-8 md:p-12 relative overflow-hidden">
+          <div className="glass-card-glow p-8 md:p-12 md:mt-[-75px] relative overflow-hidden">
             {/* Background decoration */}
             <div className="absolute -right-20 -top-20 w-64 h-64 rounded-full bg-primary/10 blur-3xl" />
             <div className="absolute -left-20 -bottom-20 w-48 h-48 rounded-full bg-primary/5 blur-3xl" />

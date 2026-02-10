@@ -46,7 +46,7 @@ export const DashboardPreview = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="dashboard" ref={ref} className="py-24 relative">
+    <section id="dashboard" ref={ref} className="py-24 relative md:mt-[-100px]">
       {/* Background Glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[600px] rounded-full blur-3xl opacity-30"
         style={{ background: "radial-gradient(ellipse, hsl(155 100% 50% / 0.15) 0%, transparent 70%)" }}

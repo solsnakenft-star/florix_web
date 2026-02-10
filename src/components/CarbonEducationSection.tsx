@@ -15,7 +15,7 @@ export const CarbonEducationSection = () => {
   ];
 
   return (
-    <section id="carbon-credits" ref={ref} className="py-24 relative">
+    <section id="carbon-credits" ref={ref} className="py-24 relative md:mt-[-100px]">
       <div className="container px-4">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left - Illustration */}

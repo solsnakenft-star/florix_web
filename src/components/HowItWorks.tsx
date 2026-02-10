@@ -29,7 +29,7 @@ export const HowItWorks = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section ref={ref} className="py-24 relative">
+    <section ref={ref} className="py-24 relative md:mt-[-100px]">
       <div className="container px-4">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
