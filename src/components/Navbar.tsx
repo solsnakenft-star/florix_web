@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
-import { Leaf, Menu, X } from "lucide-react";
+import { Download, Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/image/logo.png";
 
 const navItems = [
   { label: "Home", href: "#" },
@@ -22,11 +23,11 @@ export const Navbar = () => {
       transition={{ duration: 0.6 }}
       className="fixed top-0 left-0 right-0 z-50 px-4 py-4"
     >
-      <div className="max-w-7xl mx-auto glass-card px-6 py-3 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto glass-card px-6 py-2 flex items-center justify-between">
         {/* Logo */}
         <a href="#" className="flex items-center gap-2 group">
-          <div className="w-10 h-10 rounded-lg bg-primary/20 flex items-center justify-center neon-glow">
-            <Leaf className="w-6 h-6 text-primary" />
+          <div className="w-12 h-12 rounded-lg bg-primary/20 flex items-center justify-center neon-glow overflow-hidden">
+      <img src={logo} alt="Florix logo" className="w-[50px] h-[50px] object-contain" />
           </div>
           <span className="font-heading font-bold text-xl text-foreground">
             Florix
@@ -49,7 +50,7 @@ export const Navbar = () => {
         {/* Download Wallet Button */}
         <div className="hidden md:block">
           <Button className="btn-primary-glow rounded-full px-6">
-            Download Wallet
+            Download Wallet<Download className="w-4 h-4" />
           </Button>
         </div>
 
@@ -80,7 +81,7 @@ export const Navbar = () => {
             </a>
           ))}
           <Button className="btn-primary-glow rounded-full w-full mt-4">
-            Download Wallet
+            Download Wallet<Download className="w-4 h-4" />
           </Button>
         </motion.div>
       )}
