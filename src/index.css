@@ -36,7 +36,7 @@
 
     --radius: 0.75rem;
 
-    /* Custom Florrix tokens */
+    /* Custom Florix tokens */
     --neon-green: 155 100% 50%;
     --neon-green-glow: 0 0 20px hsl(155 100% 50% / 0.5);
     --neon-green-glow-lg: 0 0 40px hsl(155 100% 50% / 0.4), 0 0 80px hsl(155 100% 50% / 0.2);

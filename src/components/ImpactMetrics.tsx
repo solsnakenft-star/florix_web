@@ -7,7 +7,7 @@ const metrics = [
   { icon: Cloud, value: 2847500, suffix: "", label: "CO₂ Offset (tonnes)", prefix: "" },
   { icon: Coins, value: 1250000, suffix: "+", label: "Credits Tokenized", prefix: "" },
   { icon: FolderTree, value: 847, suffix: "", label: "Active Projects", prefix: "" },
-  { icon: Zap, value: 4850000, suffix: "", label: "Florrix Tokens Minted", prefix: "" },
+  { icon: Zap, value: 4850000, suffix: "", label: "Florix Tokens Minted", prefix: "" },
 ];
 
 const Counter = ({ value, suffix, prefix }: { value: number; suffix: string; prefix: string }) => {

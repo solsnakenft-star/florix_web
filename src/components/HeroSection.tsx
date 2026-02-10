@@ -43,7 +43,7 @@ export const HeroSection = () => {
             transition={{ delay: 0.4 }}
             className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto"
           >
-            Convert verified carbon credits into Florrix Tokens and power the climate economy.
+            Convert verified carbon credits into Florix Tokens and power the climate economy.
           </motion.p>
 
           {/* CTA Buttons */}
@@ -108,8 +108,8 @@ export const HeroSection = () => {
                   <Coins className="w-5 h-5 text-primary" />
                 </div>
                 <div>
-                  <p className="text-xs text-muted-foreground">Florrix Tokens</p>
-                  <p className="font-heading font-bold text-lg">24,580 FLX</p>
+                  <p className="text-xs text-muted-foreground">Florix Tokens</p>
+                  <p className="font-heading font-bold text-lg">24,580 FLO</p>
                 </div>
               </div>
             </motion.div>

@@ -24,7 +24,7 @@ export const Footer = () => {
               <div className="w-10 h-10 rounded-lg bg-primary/20 flex items-center justify-center neon-glow">
                 <Leaf className="w-6 h-6 text-primary" />
               </div>
-              <span className="font-heading font-bold text-xl">Florrix</span>
+              <span className="font-heading font-bold text-xl">Florix</span>
             </a>
             <p className="text-muted-foreground max-w-xs mb-6">
               Bridging carbon markets and blockchain technology for a sustainable future.
@@ -66,7 +66,7 @@ export const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-border mt-12 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-muted-foreground">
-            © 2024 Florrix. All rights reserved.
+            © 2024 Florix. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm text-muted-foreground">
             <a href="#" className="hover:text-primary transition-colors">Privacy Policy</a>

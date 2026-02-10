@@ -14,7 +14,7 @@ const steps = [
     icon: Coins,
     step: "02",
     title: "Tokenize on Blockchain",
-    description: "Your credits are minted as Florrix Tokens on the blockchain with full transparency and traceability.",
+    description: "Your credits are minted as Florix Tokens on the blockchain with full transparency and traceability.",
   },
   {
     icon: ArrowLeftRight,
@@ -41,7 +41,7 @@ export const HowItWorks = () => {
           </span>
           <h2 className="font-heading text-4xl md:text-5xl font-bold mt-4">
             How{" "}
-            <span className="text-gradient">Florrix</span>
+            <span className="text-gradient">Florix</span>
             {" "}Works
           </h2>
         </motion.div>

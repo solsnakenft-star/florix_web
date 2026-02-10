@@ -23,7 +23,7 @@ export const ConversionSection = () => {
             <span className="text-gradient">Tokens</span>
           </h2>
           <p className="text-muted-foreground text-lg mt-4 max-w-2xl mx-auto">
-            Watch your carbon credits transform into tradeable Florrix Tokens through our secure blockchain minting process.
+            Watch your carbon credits transform into tradeable Florix Tokens through our secure blockchain minting process.
           </p>
         </motion.div>
 
@@ -130,7 +130,7 @@ export const ConversionSection = () => {
             <ArrowRight className="w-8 h-8 text-primary" />
           </motion.div>
 
-          {/* Florrix Token */}
+          {/* Florix Token */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
@@ -146,8 +146,8 @@ export const ConversionSection = () => {
                 <Coins className="w-6 h-6 text-primary-foreground" />
               </motion.div>
               <div>
-                <p className="font-heading font-bold">Florrix Token</p>
-                <p className="text-sm text-muted-foreground">FLX</p>
+                <p className="font-heading font-bold">Florix Token</p>
+                <p className="text-sm text-muted-foreground">FLO</p>
               </div>
             </div>
             <div className="border-t border-border pt-4 space-y-2">
@@ -157,7 +157,7 @@ export const ConversionSection = () => {
               </div>
               <div className="flex justify-between text-sm">
                 <span className="text-muted-foreground">Amount</span>
-                <span className="font-mono neon-text">100 FLX</span>
+                <span className="font-mono neon-text">100 FLO</span>
               </div>
               <div className="flex justify-between text-sm">
                 <span className="text-muted-foreground">Network</span>

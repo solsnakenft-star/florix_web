@@ -137,9 +137,9 @@ export const MarketplaceSection = () => {
           transition={{ delay: 0.8 }}
           className="text-center mt-12"
         >
-          <Button variant="outline" className="rounded-full px-8 border-primary/30 hover:bg-primary/10 hover:border-primary/50">
+          {/* <Button variant="outline" className="rounded-full px-8 border-primary/30 hover:bg-primary/10 hover:border-primary/50">
             View All Projects
-          </Button>
+          </Button> */}
         </motion.div>
       </div>
     </section>

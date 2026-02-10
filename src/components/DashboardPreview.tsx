@@ -14,9 +14,9 @@ const stats = [
   },
   { 
     icon: Coins, 
-    label: "Florrix Tokens", 
+    label: "Florix Tokens", 
     value: "45,280", 
-    unit: "FLX",
+    unit: "FLO",
     change: "+8.3%",
     positive: true 
   },

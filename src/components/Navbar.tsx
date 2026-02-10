@@ -8,7 +8,7 @@ const navItems = [
   { label: "Carbon Credits", href: "#carbon-credits" },
   { label: "Tokenomics", href: "#tokenomics" },
   { label: "Marketplace", href: "#marketplace" },
-  { label: "Docs", href: "#docs" },
+  // { label: "Docs", href: "#docs" },
   { label: "Airdrop", href: "#airdrop" },
 ];
 
@@ -29,7 +29,7 @@ export const Navbar = () => {
             <Leaf className="w-6 h-6 text-primary" />
           </div>
           <span className="font-heading font-bold text-xl text-foreground">
-            Florrix
+            Florix
           </span>
         </a>
 

@@ -12,7 +12,7 @@ const utilities = [
   {
     icon: Leaf,
     title: "Offset Emissions",
-    description: "Retire Florrix Tokens to permanently offset your carbon footprint with verified environmental impact.",
+    description: "Retire Florix Tokens to permanently offset your carbon footprint with verified environmental impact.",
   },
   {
     icon: Vote,
@@ -38,7 +38,7 @@ export const TokenUtilitySection = () => {
           </span>
           <h2 className="font-heading text-4xl md:text-5xl font-bold mt-4">
             What Can You Do With{" "}
-            <span className="text-gradient">FLX?</span>
+            <span className="text-gradient">FLO?</span>
           </h2>
         </motion.div>
 

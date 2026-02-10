@@ -39,7 +39,7 @@ export const JoinAirdropSection = () => {
                 </motion.div>
                 
                 <h2 className="font-heading text-3xl md:text-4xl font-bold mb-4">
-                  Join the <span className="text-gradient">Florrix Airdrop</span>
+                  Join the <span className="text-gradient">Florix Airdrop</span>
                 </h2>
                 
                 <p className="text-muted-foreground mb-6">

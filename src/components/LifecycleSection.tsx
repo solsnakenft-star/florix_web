@@ -14,7 +14,7 @@ const steps = [
   { icon: FileCheck, label: "Project Development", description: "Sustainable project creation" },
   { icon: Shield, label: "Verification", description: "Third-party validation" },
   { icon: FileText, label: "Credit Issued", description: "Official carbon credit" },
-  { icon: Coins, label: "Tokenized", description: "Minted as Florrix Token" },
+  { icon: Coins, label: "Tokenized", description: "Minted as Florix Token" },
   { icon: ArrowLeftRight, label: "Traded", description: "Exchange on marketplace" },
   { icon: CheckCircle, label: "Retired", description: "Offset achieved" },
 ];
