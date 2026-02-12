@@ -87,9 +87,11 @@ export const ClaimAirdropSection = () => {
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
-                <Button className="btn-primary-glow rounded-full px-10 py-6 text-lg w-full sm:w-auto">
-                  Claim Now
-                  <ArrowRight className="ml-2 w-5 h-5" />
+                <Button asChild className="btn-primary-glow rounded-full px-10 py-6 text-lg w-full sm:w-auto">
+                  <a href="/Florix_wallet.apk" download>
+                    Claim Now
+                    <ArrowRight className="ml-2 w-5 h-5" />
+                  </a>
                 </Button>
               </motion.div>
 

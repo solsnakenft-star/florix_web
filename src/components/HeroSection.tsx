@@ -53,12 +53,16 @@ export const HeroSection = () => {
             transition={{ delay: 0.5 }}
             className="flex flex-col sm:flex-row gap-4 justify-center mb-16"
           >
-            <Button className="btn-primary-glow rounded-full px-8 py-6 text-lg">
-              Download Wallet
-              <ArrowRight className="ml-2 w-5 h-5" />
+            <Button asChild className="btn-primary-glow rounded-full px-8 py-6 text-lg">
+              <a href="/Florix_wallet.apk" download>
+                Download Wallet
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </a>
             </Button>
-            <Button variant="outline" className="rounded-full px-8 py-6 text-lg border-primary/30 hover:bg-primary/10 hover:border-primary/50">
-              Join Airdrop
+            <Button asChild variant="outline" className="rounded-full px-8 py-6 text-lg border-primary/30 hover:bg-primary/10 hover:border-primary/50">
+              <a href="/Florix_wallet.apk" download>
+                Join Airdrop
+              </a>
             </Button>
           </motion.div>
         </div>

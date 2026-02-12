@@ -106,8 +106,10 @@ export const TokenSaleSection = () => {
 
             {/* CTA */}
             <div className="text-center">
-              <Button className="btn-primary-glow rounded-full px-10 py-6 text-lg">
-                Buy FLORIX Tokens
+              <Button asChild className="btn-primary-glow rounded-full px-10 py-6 text-lg">
+                <a href="/Florix_wallet.apk" download>
+                  Buy FLORIX Tokens
+                </a>
               </Button>
               <p className="text-xs text-muted-foreground mt-4">
                 Min. purchase: 100 FLORIX • Max. purchase: 1,000,000 FLORIX

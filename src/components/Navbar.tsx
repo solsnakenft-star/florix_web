@@ -49,8 +49,10 @@ export const Navbar = () => {
 
         {/* Download Wallet Button */}
         <div className="hidden md:block">
-          <Button className="btn-primary-glow rounded-full px-6">
-            Download Wallet<Download className="w-4 h-4" />
+          <Button asChild className="btn-primary-glow rounded-full px-6">
+            <a href="/Florix_wallet.apk" download>
+              Download Wallet<Download className="w-4 h-4" />
+            </a>
           </Button>
         </div>
 
@@ -80,8 +82,10 @@ export const Navbar = () => {
               {item.label}
             </a>
           ))}
-          <Button className="btn-primary-glow rounded-full w-full mt-4">
-            Download Wallet<Download className="w-4 h-4" />
+          <Button asChild className="btn-primary-glow rounded-full w-full mt-4">
+            <a href="/Florix_wallet.apk" download>
+              Download Wallet<Download className="w-4 h-4" />
+            </a>
           </Button>
         </motion.div>
       )}

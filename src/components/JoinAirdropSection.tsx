@@ -71,9 +71,11 @@ export const JoinAirdropSection = () => {
                   <Progress value={68} className="h-2" />
                 </div>
 
-                <Button className="btn-primary-glow rounded-full px-8 py-6">
-                  Claim Your Airdrop
-                  <ArrowRight className="ml-2 w-5 h-5" />
+                <Button asChild className="btn-primary-glow rounded-full px-8 py-6">
+                  <a href="/Florix_wallet.apk" download>
+                    Claim Your Airdrop
+                    <ArrowRight className="ml-2 w-5 h-5" />
+                  </a>
                 </Button>
               </div>
 
