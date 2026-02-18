@@ -58,7 +58,7 @@ export const JoinAirdropSection = () => {
                     <div className="w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center">
                       <Coins className="w-4 h-4 text-primary" />
                     </div>
-                    <span className="text-sm text-muted-foreground">200M FLORIX tokens allocated</span>
+                    <span className="text-sm text-muted-foreground">2B FLORIX tokens allocated</span>
                   </div>
                 </div>
 
@@ -66,9 +66,9 @@ export const JoinAirdropSection = () => {
                 <div className="mb-6">
                   <div className="flex justify-between text-sm mb-2">
                     <span className="text-muted-foreground">Distribution Progress</span>
-                    <span className="text-primary font-medium">68%</span>
+                    <span className="text-primary font-medium">21.29%</span>
                   </div>
-                  <Progress value={68} className="h-2" />
+                  <Progress value={21.29} className="h-2" />
                 </div>
 
                 <Button asChild className="btn-primary-glow rounded-full px-8 py-6">

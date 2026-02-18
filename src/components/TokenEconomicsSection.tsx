@@ -12,9 +12,9 @@ const tokenInfo = [
 
 const allocation = [
   { label: "Airdrop", percentage: 40, color: "hsl(155 100% 50%)" },
-  { label: "Token Sale", percentage: 20, color: "hsl(155 80% 40%)" },
+  { label: "Token Sale", percentage: 18, color: "hsl(155 80% 40%)" },
   { label: "Liquidity", percentage: 20, color: "hsl(155 60% 35%)" },
-  { label: "Staking / Rewards", percentage: 10, color: "hsl(155 50% 30%)" },
+  { label: "Staking / Rewards", percentage: 12, color: "hsl(155 50% 30%)" },
   { label: "Team", percentage: 10, color: "hsl(155 40% 25%)" },
 ];
 

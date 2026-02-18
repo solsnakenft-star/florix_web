@@ -73,12 +73,12 @@ export const Footer = () => {
               <ul className="space-y-3">
                 {links.map((link) => (
                   <li key={link}>
-                    <a
+                    {/* <a
                       href="#"
                       className="text-muted-foreground hover:text-primary transition-colors text-sm"
-                    >
+                    > */}
                       {link}
-                    </a>
+                    {/* </a> */}
                   </li>
                 ))}
               </ul>
@@ -92,9 +92,9 @@ export const Footer = () => {
             © 2024 Florix. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm text-muted-foreground">
-            <a href="#" className="hover:text-primary transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-primary transition-colors">Terms of Service</a>
-            <a href="#" className="hover:text-primary transition-colors">Cookie Policy</a>
+            <span>Privacy Policy</span>
+            <span>Terms of Service</span>
+            <span>Cookie Policy</span>  
           </div>
         </div>
       </div>

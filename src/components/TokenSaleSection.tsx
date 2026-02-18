@@ -6,9 +6,9 @@ import { Progress } from "@/components/ui/progress";
 import { Button } from "@/components/ui/button";
 
 const saleStats = [
-  { label: "Tokens Sold", value: "68M", icon: Coins },
-  { label: "Remaining Supply", value: "32M", icon: TrendingUp },
-  { label: "Current Price", value: "$0.025", icon: Clock },
+  { label: "Tokens Sold", value: "680M", icon: Coins },
+  { label: "Remaining Supply", value: "320M", icon: TrendingUp },
+  { label: "Current Price", value: "$0.01", icon: Clock },
   { label: "Participants", value: "12,450", icon: Users },
 ];
 
@@ -80,7 +80,7 @@ export const TokenSaleSection = () => {
                 </div>
                 <div className="text-right">
                   <p className="text-xs text-muted-foreground">Hard Cap</p>
-                  <p className="font-heading font-semibold">$5M</p>
+                  <p className="font-heading font-semibold">$9M</p>
                 </div>
               </div>
             </div>
@@ -112,7 +112,7 @@ export const TokenSaleSection = () => {
                 </a>
               </Button>
               <p className="text-xs text-muted-foreground mt-4">
-                Min. purchase: 100 FLORIX • Max. purchase: 1,000,000 FLORIX
+                Min. purchase: 1000 FLORIX • Max. purchase: 20,00,000 FLORIX
               </p>
             </div>
           </div>
