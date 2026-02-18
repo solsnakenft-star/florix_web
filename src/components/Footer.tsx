@@ -32,8 +32,8 @@ const footerLinks = {
 };
 
 const socialLinks = [
-  { icon: XIcon, href: "#", label: "X" },
-  { icon: TelegramIcon, href: "#", label: "Telegram" },
+  { icon: XIcon, href: "https://x.com/FlorixTech", label: "X" },
+  { icon: TelegramIcon, href: "https://t.me/florixflo", label: "Telegram" },
 ];
 
 export const Footer = () => {

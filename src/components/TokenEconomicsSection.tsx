@@ -5,9 +5,9 @@ import { Coins, Globe, Users, Lock } from "lucide-react";
 
 const tokenInfo = [
   { label: "Token Name", value: "FLORIX", icon: Coins },
-  { label: "Total Supply", value: "500 CR", icon: Globe },
+  { label: "Total Supply", value: "5B", icon: Globe },
   { label: "Token Type", value: "Utility + Governance", icon: Users },
-  { label: "Network", value: "Multi-chain", icon: Lock },
+  { label: "Network", value: "BNB Smart Chain", icon: Lock },
 ];
 
 const allocation = [
@@ -166,7 +166,7 @@ export const TokenEconomicsSection = () => {
                   className="text-center"
                 >
                   <p className="text-xs text-muted-foreground mb-1">Total Supply</p>
-                  <p className="font-heading text-2xl font-bold text-gradient">500 CR</p>
+                  <p className="font-heading text-2xl font-bold text-gradient">5B</p>
                   <p className="text-xs text-muted-foreground mt-1">FLORIX</p>
                 </motion.div>
               </div>
