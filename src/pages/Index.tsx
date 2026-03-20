@@ -1,47 +1,27 @@
-import { Navbar } from "@/components/Navbar";
-import { HeroSection } from "@/components/HeroSection";
-import { JoinAirdropSection } from "@/components/JoinAirdropSection";
-import { FeaturesSection } from "@/components/FeaturesSection";
-import { CarbonEducationSection } from "@/components/CarbonEducationSection";
-import { LifecycleSection } from "@/components/LifecycleSection";
-import { ConversionSection } from "@/components/ConversionSection";
-import { TokenEconomicsSection } from "@/components/TokenEconomicsSection";
-import { TokenSaleSection } from "@/components/TokenSaleSection";
-import { DashboardPreview } from "@/components/DashboardPreview";
-import { MarketplaceSection } from "@/components/MarketplaceSection";
-import { ImpactMetrics } from "@/components/ImpactMetrics";
-import { HowItWorks } from "@/components/HowItWorks";
-import { ClaimAirdropSection } from "@/components/ClaimAirdropSection";
-import { SecuritySection } from "@/components/SecuritySection";
-import { CTASection } from "@/components/CTASection";
-import { Footer } from "@/components/Footer";
-import { FloatingParticles } from "@/components/FloatingParticles";
+import Navbar from "@/components/Navbar";
+import FloatingParticles from "@/components/FloatingParticles";
+import HeroSection from "@/components/HeroSection";
+import EcosystemSection from "@/components/EcosystemSection";
+import FeaturesSection from "@/components/FeaturesSection";
+import TokenDistributionSection from "@/components/TokenDistributionSection";
+import CommunitySection from "@/components/CommunitySection";
+import ImpactSection from "@/components/ImpactSection";
+import RoadmapSection from "@/components/RoadmapSection";
+import FooterSection from "@/components/FooterSection";
 
-const Index = () => {
-  return (
-    <div className="min-h-screen bg-background relative overflow-x-hidden">
-      <FloatingParticles />
-      <Navbar />
-      <main>
-        <HeroSection />
-        <JoinAirdropSection />
-        <FeaturesSection />
-        <CarbonEducationSection />
-        <LifecycleSection />
-        <ConversionSection />
-        <TokenEconomicsSection />
-        <TokenSaleSection />
-        <DashboardPreview />
-        <MarketplaceSection />
-        <ImpactMetrics />
-        <HowItWorks />
-        <ClaimAirdropSection />
-        <SecuritySection />
-        <CTASection />
-      </main>
-      <Footer />
-    </div>
-  );
-};
+const Index = () => (
+  <div className="min-h-screen bg-background relative overflow-x-hidden">
+    <FloatingParticles />
+    <Navbar />
+    <HeroSection />
+    <div id="ecosystem"><EcosystemSection /></div>
+    <div id="features"><FeaturesSection /></div>
+    <TokenDistributionSection />
+    <div id="community"><CommunitySection /></div>
+    <ImpactSection />
+    <div id="roadmap"><RoadmapSection /></div>
+    <FooterSection />
+  </div>
+);
 
 export default Index;

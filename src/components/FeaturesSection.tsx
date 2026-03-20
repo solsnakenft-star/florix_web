@@ -1,73 +1,36 @@
-import { motion } from "framer-motion";
-import { useInView } from "framer-motion";
-import { useRef } from "react";
-import { Shield, Zap, Eye } from "lucide-react";
+import ScrollReveal from "./ScrollReveal";
+import { Shield, BookOpen, Users, Leaf } from "lucide-react";
 
 const features = [
-  {
-    icon: Shield,
-    title: "Secure Carbon Credit Storage",
-    description: "Your carbon credits are safely stored on the blockchain with military-grade encryption and multi-signature security.",
-  },
-  {
-    icon: Zap,
-    title: "Instant Tokenization",
-    description: "Convert your verified carbon credits into FLORIX tokens in seconds with our streamlined minting process.",
-  },
-  {
-    icon: Eye,
-    title: "Transparent Blockchain Tracking",
-    description: "Track every carbon credit from origin to retirement with complete transparency on the immutable ledger.",
-  },
+  { icon: Shield, title: "Carbon Credit Verification", desc: "Multi-layer verification protocol ensures every credit is authentic, auditable, and backed by real-world environmental action." },
+  { icon: BookOpen, title: "Transparent Ledger System", desc: "An immutable public ledger records every transaction, providing complete auditability for stakeholders and regulators." },
+  { icon: Users, title: "Community Participation Programs", desc: "Engage in sustainability missions and contribute to the ecosystem through decentralized participation programs." },
+  { icon: Leaf, title: "Sustainable Token Utility", desc: "Tokens power governance, staking, and ecosystem services — designed for long-term value aligned with sustainability goals." },
 ];
 
-export const FeaturesSection = () => {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
+const FeaturesSection = () => (
+  <section className="relative py-24 z-10">
+    <div className="container mx-auto px-6 max-w-5xl">
+      <ScrollReveal className="text-center mb-16">
+        <p className="text-primary/80 text-sm tracking-[0.3em] uppercase mb-4 font-medium">Core Features</p>
+        <h2 className="text-3xl md:text-5xl font-bold gradient-text">Built for Trust & Impact</h2>
+      </ScrollReveal>
 
-  return (
-    <section ref={ref} className="py-24 relative md:mt-[-100px]">
-      <div className="container px-4">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          className="text-center mb-16"
-        >
-          <h2 className="font-heading text-3xl md:text-4xl font-bold mb-4">
-            Why Choose <span className="text-gradient">Florix</span>
-          </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            Built for the future of carbon markets with cutting-edge blockchain technology
-          </p>
-        </motion.div>
-
-        <div className="grid md:grid-cols-3 gap-8">
-          {features.map((feature, index) => (
-            <motion.div
-              key={feature.title}
-              initial={{ opacity: 0, y: 30 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ delay: index * 0.1 }}
-              className="glass-card p-8 group hover:border-primary/40 transition-all duration-300"
-            >
-              <motion.div
-                whileHover={{ scale: 1.1, rotate: 5 }}
-                className="w-14 h-14 rounded-xl bg-primary/20 flex items-center justify-center mb-6 group-hover:neon-glow transition-all"
-              >
-                <feature.icon className="w-7 h-7 text-primary" />
-              </motion.div>
-              
-              <h3 className="font-heading text-xl font-semibold mb-3">
-                {feature.title}
-              </h3>
-              
-              <p className="text-muted-foreground text-sm leading-relaxed">
-                {feature.description}
-              </p>
-            </motion.div>
-          ))}
-        </div>
+      <div className="grid md:grid-cols-2 gap-6">
+        {features.map((f, i) => (
+          <ScrollReveal key={f.title} delay={i * 0.1}>
+            <div className="bg-card border border-border rounded-xl p-8 card-hover-glow group h-full">
+              <div className="w-12 h-12 rounded-lg bg-secondary flex items-center justify-center mb-5 group-hover:bg-primary/10 transition-colors">
+                <f.icon className="w-6 h-6 text-primary" />
+              </div>
+              <h3 className="text-xl font-semibold text-foreground mb-3">{f.title}</h3>
+              <p className="text-muted-foreground text-sm leading-relaxed">{f.desc}</p>
+            </div>
+          </ScrollReveal>
+        ))}
       </div>
-    </section>
-  );
-};
+    </div>
+  </section>
+);
+
+export default FeaturesSection;
