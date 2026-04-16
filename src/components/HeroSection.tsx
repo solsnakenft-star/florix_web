@@ -20,7 +20,7 @@ const HeroSection = () => (
           <span className="text-foreground">of Carbon-Neutral Web3</span>
         </h1>
         <p className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
-          A transparent carbon credit ecosystem built on blockchain — driving sustainability, accountability, and real-world environmental impact.
+          A transparent carbon credit ecosystem built on blockchain - driving sustainability, accountability, and real-world environmental impact.
         </p>
       </motion.div>
 

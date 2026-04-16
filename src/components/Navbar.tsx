@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import logo from "../assets/image/logo.png";
 
 const links = ["Ecosystem", "Features", "Community", "Roadmap"];
 
@@ -11,19 +12,22 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/60 backdrop-blur-xl border-b border-border/50">
       <div className="container mx-auto px-6 max-w-6xl flex items-center justify-between h-16">
         <div className="flex items-center gap-2">
-          <div className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center">
-            <span className="text-primary text-sm font-bold">C</span>
-          </div>
-          <span className="text-foreground font-semibold text-lg">CarbonChain</span>
+          <img src={logo} alt="Florix Logo" className="w-8 h-8 rounded-full" />
+          <span className="text-foreground font-semibold text-lg">Florix</span>
         </div>
 
         <div className="hidden md:flex items-center gap-8">
           {links.map((l) => (
             <a key={l} href={`#${l.toLowerCase()}`} className="text-muted-foreground text-sm hover:text-primary transition-colors">{l}</a>
           ))}
-          <button className="px-5 py-2 bg-primary text-primary-foreground rounded-lg text-sm font-semibold hover:box-glow transition-all">
+          <a
+            href="https://play.google.com/store/apps/details?id=com.florix"
+            target="_blank"
+            rel="noreferrer"
+            className="px-5 py-2 bg-primary text-primary-foreground rounded-lg text-sm font-semibold hover:box-glow transition-all"
+          >
             Launch App
-          </button>
+          </a>
         </div>
 
         <button className="md:hidden text-foreground" onClick={() => setOpen(!open)}>
@@ -43,9 +47,14 @@ const Navbar = () => {
               {links.map((l) => (
                 <a key={l} href={`#${l.toLowerCase()}`} onClick={() => setOpen(false)} className="text-muted-foreground hover:text-primary transition-colors">{l}</a>
               ))}
-              <button className="px-5 py-2 bg-primary text-primary-foreground rounded-lg text-sm font-semibold w-full">
+              <a
+                href="https://play.google.com/store/apps/details?id=com.florix"
+                target="_blank"
+                rel="noreferrer"
+                className="px-5 py-2 bg-primary text-primary-foreground rounded-lg text-sm font-semibold w-full text-center"
+              >
                 Launch App
-              </button>
+              </a>
             </div>
           </motion.div>
         )}

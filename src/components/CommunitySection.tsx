@@ -4,7 +4,7 @@ import { Award, Target, Globe } from "lucide-react";
 const programs = [
   { icon: Award, title: "Contributor Programs", desc: "Earn recognition and ecosystem incentives by contributing to protocol development, governance, and community growth." },
   { icon: Target, title: "Sustainability Missions", desc: "Participate in time-bound missions focused on real-world environmental outcomes and carbon offset verification." },
-  { icon: Globe, title: "Ambassador Initiatives", desc: "Represent the ecosystem globally — educate, onboard, and expand the community in your region." },
+  { icon: Globe, title: "Ambassador Initiatives", desc: "Represent the ecosystem globally - educate, onboard, and expand the community in your region." },
 ];
 
 const CommunitySection = () => (

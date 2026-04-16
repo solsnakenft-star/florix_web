@@ -7,7 +7,7 @@ const metrics = [
 ];
 
 const ImpactSection = () => (
-  <section className="relative py-24 z-10">
+  <section className="relative py-0 z-10">
     <div className="container mx-auto px-6 max-w-5xl">
       <ScrollReveal className="text-center mb-16">
         <p className="text-primary/80 text-sm tracking-[0.3em] uppercase mb-4 font-medium">Impact</p>

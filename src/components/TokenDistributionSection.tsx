@@ -11,12 +11,12 @@ const allocations = [
 ];
 
 const TokenDistributionSection = () => (
-  <section className="relative py-24 z-10">
+  <section className="relative py-0 z-10">
     <div className="container mx-auto px-6 max-w-4xl">
       <ScrollReveal className="text-center mb-16">
         <p className="text-primary/80 text-sm tracking-[0.3em] uppercase mb-4 font-medium">Token Allocation</p>
         <h2 className="text-3xl md:text-5xl font-bold gradient-text">Ecosystem Distribution</h2>
-        <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">Designed for long-term sustainability — every token allocation serves the ecosystem and its community.</p>
+        <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">Designed for long-term sustainability - every token allocation serves the ecosystem and its community.</p>
       </ScrollReveal>
 
       <div className="grid sm:grid-cols-2 gap-6">
