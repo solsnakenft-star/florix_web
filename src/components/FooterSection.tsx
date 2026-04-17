@@ -1,5 +1,5 @@
-import { Download } from "lucide-react";
 import logo from "../assets/image/logo.png";
+import playstore from "../assets/image/playstore.png";
 
 const FooterSection = () => (
   <footer className="relative z-10 border-t border-border py-12">
@@ -8,10 +8,15 @@ const FooterSection = () => (
         <div className="flex items-center gap-2">
           <img src={logo} alt="Florix Logo" className="w-10 h-10 rounded-full" />
           <span className="text-foreground font-semibold">Florix</span>
-          <button className="px-5 py-2 bg-primary text-primary-foreground rounded-lg text-sm font-semibold hover:box-glow transition-all ml-4 flex items-center gap-2">
-            <Download size={16} />
-            Download Plastore App
-          </button>
+          <a
+            href="https://play.google.com/store/apps/details?id=com.florix"
+            target="_blank"
+            rel="noreferrer"
+            className="ml-4 inline-flex items-center transition-all hover:opacity-85"
+            aria-label="Open Florix on Google Play"
+          >
+            <img src={playstore} alt="Get it on Google Play" className="h-12 w-auto" />
+          </a>
         </div>
 
         <div className="flex gap-6 text-sm text-muted-foreground">
